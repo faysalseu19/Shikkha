@@ -1,0 +1,1020 @@
+/*
+  Theme Name: Name - Multipurpose HTML Template
+  Author: 
+  Support: admin@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+
+/* CSS Index 
+------------------------------------
+
+*/
+
+/* =============================================
+1. Theme default css
+============================================== */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@300;400&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+ body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #989898;
+	height: 100vh;
+	width: 100%;
+}
+img {
+	max-width: 100%;
+}
+a {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	color: #000;
+	text-transform: capitalize;
+	-webkit-transition: all 0.4s ease-out;
+	-moz-transition: all 0.4s ease-out;
+	-ms-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+}
+a:focus,
+.button:focus,
+button {
+	text-decoration: none;
+	outline: none;
+}
+
+a:focus,
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	color: #111;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none;
+}
+p {
+	margin: 0;
+}
+*::placeholder {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #9fa1af;
+	text-shadow: none;
+}
+/* Button Style */
+
+.shikkha-btn {
+	display: inline-block;
+	text-transform: capitalize;
+	background-color: rgb(255, 234, 0);
+	color: #000;
+	box-shadow: 0px 4px 9px 0px rgba(224, 231, 244, 0.004);
+	border-radius: 0 30px;
+	border: 2px solid transparent;
+	width: 181px;
+	height: 58px;
+	line-height: 58px;
+	text-align: center;
+	transition: all 0.4s ease-in-out;
+}
+.shikkha-btn:hover {
+	background-color: transparent;
+	color: #000;
+	border: 2px solid #000;
+}
+.white-btn {
+	background: #fff;
+	color: #484848;
+}
+.white-btn:hover {
+	background: transparent;
+	border-color: #fff;
+}
+/* section style */
+
+.section-title {
+	margin-bottom: 40px;
+
+}
+.section-title h1 {
+	font-size: 40px;
+	color: rgb(0, 0, 0);
+	font-weight: 700;
+	text-align: left;
+	text-transform: capitalize;
+}
+.section-title p {
+	color: #111;
+	font-size: 18px;
+}
+.padding-100{
+	padding: 100px 0;
+}
+
+/* =============================================
+Shikkha-Header-Top Style
+============================================== */
+.shikkha-header-top {
+	position: relative;
+	padding: 30px 0;
+	background: #ffea00;
+	overflow: hidden;
+}
+.shikkha-header-top .header-top-wrapper {
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+}
+.shikkha-header-top .header-top-wrapper .header-top-left a {
+	display: inline-block;
+	margin-right: 20px;
+	color: #111;
+	transition: all 0.4s ease-in-out;
+}
+.shikkha-header-top .header-top-wrapper .header-top-left a:hover {
+	color: #ff0000;
+}
+
+.shikkha-header-top .header-top-wrapper .header-top-center li {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	color: #111;
+}
+.shikkha-header-top .header-top-wrapper .header-top-center li span {
+	margin-left: 40px;
+}
+.shikkha-header-top .header-top-wrapper .header-top-right {
+	position: relative;
+}
+.shikkha-header-top .header-top-wrapper .header-top-right li {
+	display: inline-block;
+}
+.shikkha-header-top .header-top-wrapper .header-top-right li a {
+	font-family: 'Poppins', sans-serif;
+	padding: 8px 16px;
+	font-size: 14px;
+	font-weight: 600;
+	color: #111;
+	border-radius: 30px;
+	background: transparent;
+	transition: all 0.4s ease-in-out;
+}
+.shikkha-header-top .header-top-wrapper .header-top-right::after {
+    position: absolute;
+    content: "0";
+    top: -4px;
+    right: 58px;
+    height: 14px;
+    line-height: 14px;
+    width: 14px;
+    text-align: center;
+    border-radius: 50%;
+    background: #fff;
+}
+.shikkha-header-top .header-top-wrapper .header-top-right li a:hover {
+	background: #111;
+	color: #fef269;
+}
+.shikkha-header-top .header-top-wrapper .header-top-right li .fa-shopping-cart {
+	margin-right: 10px;
+}
+/* =============================================
+Shikkha Navigation Style
+============================================== */
+.mobile-menu {
+	display: none;
+}
+.header-area .navbar {
+	left: 0;
+    right: 0;
+	position: absolute;
+	transition: all 0.4s ease-in-out;
+	padding: 0;
+	background: #000; 
+	opacity: .7;
+	z-index: 9999;
+}
+.header-area.sticky{
+	box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.4);
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	left: 0;
+	z-index: 990;
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	background: #000;
+	opacity: 0.8;
+	padding-bottom: 0;
+}
+.header-area .nav-container .navbar-collapse .navbar-nav {
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+.header-area .nav-container .navbar-collapse .navbar-nav li {
+    margin-left: 30px;
+    display: inline-block;
+    font-weight: 500;
+}
+.header-area .nav-container .navbar-collapse .navbar-nav li a {
+	display: block;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: capitalize;
+	margin: 0;
+	padding: 25px 0;
+	transition: all 0.4s ease-in-out;
+	position: relative;
+}
+.header-area.sticky .nav-container .navbar-collapse .navbar-nav li a {
+    color: #fff;
+}
+
+/* =============================================
+Shikkha Hero Area Style
+============================================== */
+.hero-content {
+	position: relative;
+	background: #ffea00;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.hero-content.bg-1::before {
+	background: url(../img/hero-bg1.jpg) no-repeat center center/cover;
+}
+.hero-content.bg-2::before {
+	background: url(../img/hero-bg2.jpg) no-repeat center center/cover;
+}
+.hero-content.bg-3::before {
+	background: url(../img/hero-bg3.jpg) no-repeat center center/cover;
+}
+.hero-content::before {
+	position: absolute;
+	content: " ";
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100%;
+}
+
+.hero-content::after {
+	position: absolute;
+	content: " ";
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	background: #fef269;
+	opacity: 0.3;
+}
+.hero-text {
+	text-align: right;
+	padding-right: 20px;
+}
+.hero-text h1 {
+	font-size: 46px;
+	line-height: 60px;
+}
+.hero-text p {
+	font-size: 14px;
+	color: #111;
+	margin-bottom: 34px;
+}
+.hero-btn-1{
+	border-radius: 0 30px 30px;
+	background: #fff;
+	margin-right: 10px;
+}
+.hero-btn-1:hover {
+	background: transparent;
+}
+.hero-btn-2 {
+	background: transparent;
+	border-radius: 30px 30px 0;
+	border: 2px solid #000;
+}
+.hero-btn-2:hover {
+	background: #fff;
+	border-color: transparent;
+}
+
+.hero-area .hero-active .owl-nav div {
+	top: 50%;
+	left: 30px;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	background: #fff;
+	color: #c0c0c0;
+	border-radius: 50%;
+	position: absolute;
+	text-align: center;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	font-size: 16px;
+	border: 1px solid transparent;
+}
+.hero-area .hero-active .owl-nav div.owl-next {
+	left: auto;
+	right: 30px;
+}
+.hero-area .hero-active .owl-nav div:hover {
+	background: transparent;
+	color: #000;
+	border-color: #000;
+}
+
+.hero-area .hero-active .owl-item img {
+    display: block;
+    width: auto;
+}
+.hero-area .hero-active .owl-dots {
+    position: absolute;
+    top: 50%;
+    right: 8%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.hero-area .hero-active .owl-dots .owl-dot {
+    display: block;
+    height: 25px;
+    width: 5px;
+    background: #606060;
+    margin: 8px 0px;
+    opacity: 0.8;
+}
+.hero-area .hero-active .owl-dots .owl-dot:hover,
+.hero-area .hero-active .owl-dots .owl-dot.active {
+    background: #ff0000;
+    opacity: 1;
+}
+/* =============================================
+Shikkha Services Area Style
+============================================== */
+.services-area .services-active .single-service-item {
+	padding: 50px 30px;
+	margin-bottom: 40px;
+	background-color: rgb(255, 255, 255);
+	color: #111;
+	box-shadow: 0px 4px 9px 0px rgba(176, 178, 192, 0.2);
+	transition: all 0.4s ease-in-out;
+}
+.services-area .services-active .single-service-item:hover {
+	background: #ffea00;
+}
+.services-area .services-active .single-service-item .icon {
+	width: 40px;
+	height: 38px;
+}
+  
+.services-area .services-active .single-service-item .title {
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	color: rgb(17, 17, 17);
+	font-weight: 700;
+	margin: 28px 0 24px;
+}
+.services-area .services-active .single-service-item p{
+	color: rgb(17, 17, 17);
+	margin-bottom: 10px;
+}
+.services-area .services-active .single-service-item a{
+	color: rgb(17, 17, 17);
+	line-height: 1.4;
+	font-weight: 400;
+	transition: all 0.4s ease-in-out;
+}
+.services-area .services-active .single-service-item:hover a {
+	font-weight: 700;
+}
+.services-area .services-active .owl-nav div {
+	top: 50%;
+	left: -50px;
+	color: #c0c0c0;
+	position: absolute;
+	text-align: center;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	font-size: 16px;
+}
+.services-area .services-active .owl-nav div.owl-next {
+	left: auto;
+	right: -50px;
+}
+.services-area .services-active .owl-nav div:hover {
+	color: #000;
+}
+
+.services-area .owl-carousel .owl-item img {
+	width: auto;
+}
+
+/* =============================================
+Shikkha Video Area Style
+============================================== */
+
+.shikkha-video-area {
+	background: url(../img/video-bg.jpg) no-repeat center center/cover;
+	height: 600px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	position: relative;
+}
+.shikkha-video-area::before {
+	position: absolute;
+	content: " ";
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: url(../img/video-overlay-bg.png);
+}
+.shikkha-video-area .video-thumb-wrapper h2 {
+	font-size: 36px;
+	color: #fff;
+	font-weight: 700;
+}
+.shikkha-video-area .video-thumb-wrapper p {
+	font-family: 'Poppins', sans-serif;
+	color: #c8c8c8;
+	margin: 24px 0 36px;
+	padding: 0 40px;
+}
+.shikkha-video-area .video-thumb-wrapper .icon {
+	height: 65px;
+	width: 65px;
+	line-height: 65px;
+	background: #ffea00;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 50%;
+	cursor: pointer;
+}
+/* =============================================
+Shikkha  Protfolio Area Style
+============================================== */
+.protfolio-area {
+	background-color: #f3f3f3;
+}
+.protfolio-area .filter-btn-wrapper li{
+	font-family: 'Montserrat', sans-serif; 
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 300;
+	margin-right: 26px;
+	color: #111;
+	text-transform: capitalize;
+	cursor: pointer;
+}
+.protfolio-area .filter-btn-wrapper li:hover {
+	color: #000;
+	font-weight: 500;
+}
+.protfolio-area .filter-btn-wrapper li.active-btn {
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif; 
+	color: #000;
+	font-weight: 500;
+}
+
+.protfolio-area .single-protfolio-item {
+	background-color: rgb(255, 255, 255);
+	margin-top: 40px;
+	transition: all 0.4s ease-in-out;
+}
+.protfolio-area .single-protfolio-item:hover {
+	box-shadow: 0px 7px 16px 0px rgba(206, 212, 223, 0.4);
+}
+.protfolio-area .single-protfolio-item .protfolio-content {
+	padding: 22px 30px 30px;
+}
+.protfolio-area .single-protfolio-item .protfolio-content .pricing-details,
+.protfolio-area .single-protfolio-item .protfolio-content .rating-details {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.protfolio-area .single-protfolio-item .protfolio-content .pricing-details .price-item {
+	font-size: 14px;
+	color: #000;
+	padding: 5px 14px;
+	background: #eaeaea;
+	border-radius: 5px;
+}
+.protfolio-area .single-protfolio-item .protfolio-content .pricing-details .price {
+	text-align: right;
+}
+.protfolio-area .single-protfolio-item .protfolio-content .pricing-details .price .before{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	color: #757575;
+	text-decoration: line-through;
+} 
+.protfolio-area .single-protfolio-item .protfolio-content .pricing-details .price .after {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-size: 22px;
+	color: #ff0000;
+}
+.protfolio-area .single-protfolio-item .protfolio-content h4 {
+	font-size: 20px;
+	font-weight: 500;
+	color: #000;
+	display: block;
+	line-height: 30px;
+	margin: 20px 0;
+}
+.protfolio-area .single-protfolio-item .protfolio-content h4 span {
+	display: block;
+	font-size: 16px;
+	font-weight: 400;
+	color: #6e6e6e;
+}
+.protfolio-area .single-protfolio-item .protfolio-content .rating-details .rating {
+	display: flex;
+	color: #ffea00;
+}
+.protfolio-area .single-protfolio-item .protfolio-content .rating-details .rating .fa-star {
+	margin-right: 5px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+}
+.protfolio-area .single-protfolio-item .protfolio-content .rating-details a {
+	font-weight: 400;
+}
+.protfolio-area .single-protfolio-item .protfolio-content .rating-details a:hover{
+	color: #000;
+}
+.protfolio-area .single-protfolio-item .protfolio-content .rating-details .protfolio-btn {
+	color: #000;
+	font-weight: 500;
+	border-radius: 0;
+	text-align: center;
+	background: transparent;
+	padding: 8px 20px;
+	transition: all 0.4s ease-in-out;
+}
+.protfolio-area .single-protfolio-item:hover .protfolio-content .rating-details .protfolio-btn {
+	background: #ffea00;
+	color: #000;
+	box-shadow: 0px 7px 11px 0px rgba(206, 212, 223, 0.4);
+}
+
+/* =============================================
+Shikkha Discount Area Style
+============================================== */
+.discount-area {
+	padding: 60px 0;
+	background: #ffea00;
+}
+.discount-area .disconut-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.discount-area .disconut-wrapper .sub-title {
+	font-weight: 300;
+}
+.discount-area .disconut-wrapper .title {
+	margin: 20px 0 16px;
+}
+.discount-area .disconut-wrapper h3 {
+	font-size: 30px;
+	color: rgb(42, 42, 42);
+}
+
+/* =============================================
+Shikkha Event Area Style
+============================================== */
+.event-area {
+	padding: 100px 0 60px;
+}
+.event-area .single-event-wrapper {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+.event-area .single-event-wrapper .event-left .date {
+	height: 160px;
+	width: 160px;
+	padding-top: 40px;
+	font-weight: 600;
+	text-align: center;
+	background: #ffea00;
+	color: #000;
+	line-height: 1.2;
+}
+.event-text {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.event-area .single-event-wrapper .event-center {
+	padding: 0 60px;
+}
+.event-area .single-event-wrapper .event-center .event-title {
+	color: #2e2e2e;
+	font-size: 25px;
+}
+.event-area .single-event-wrapper .event-center p{
+	margin: 18px 0;
+}
+.event-area .single-event-wrapper .event-center span {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	color: #565654;
+	margin-right: 20px;
+}
+.event-area .single-event-wrapper .event-center span img {
+	margin-right: 6px;
+}
+.event-right {
+	margin: auto 0;
+}
+
+/* =============================================
+Shikkha Team Area Style
+============================================== */
+.card-area {
+	background: url(../img/card-bg.png) no-repeat center center/cover;
+}
+  
+.card-area .single-card-wrapper {
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 2px 3px 0px rgba(224, 231, 244, 0.6);
+	margin-bottom: 50px;
+	transition: all 0.4s ease-in-out;
+}
+.card-area .single-card-wrapper:hover {
+	background: #ffea00;
+}
+
+.card-area .single-card-wrapper .info-text {
+	position: relative;
+	padding: 50px 0;
+	transition: all 0.4s ease-in-out;
+}
+.card-area .single-card-wrapper .info-text .name {
+	display: block;
+	font-size: 20px;
+}
+.card-area .single-card-wrapper.info-text span {
+	font-size: 16px;
+	color: #8b8a8a;
+	font-weight: 300;
+	transition: all 0.4s ease-in-out;
+}
+.card-area .single-card-wrapper:hover .info-text span {
+	color: #111;
+}
+.card-area .single-card-wrapper .social-link {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: -24px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.4s ease-in-out;
+}
+.card-area .single-card-wrapper:hover .social-link {
+	display: flex;
+	opacity: 1;
+	visibility: visible;
+}
+.card-area .single-card-wrapper .social-link ul {
+	padding: 14px 0px;
+	box-shadow: 0px 4px 9px 0px rgba(224, 231, 244, 0.4);
+	background: #ffea00;
+	transition: all 0.4s ease-in-out;
+}
+.card-area .single-card-wrapper .social-link ul a {
+	padding: 16px 20px;
+	color: #111;
+	transition: all 0.4s ease-in-out;
+}
+.card-area .single-card-wrapper .social-link ul a:hover {
+	background: #000;
+	color: #fff;
+}
+  
+/* =============================================
+Shikkha Blog Area Style
+============================================== */
+.blog-news-area .single-blog-wrapper {
+	margin-bottom: 50px;
+	box-shadow: 0px 4px 9px 0px rgba(224, 231, 244, 0.4);
+}
+.blog-news-area .single-blog-wrapper .blog-contnet {
+	padding: 40px 25px;
+}
+.blog-news-area .single-blog-wrapper .blog-contnet .bolg-heading,
+.blog-news-area .single-blog-wrapper .blog-contnet .bolg-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.blog-news-area .single-blog-wrapper .blog-contnet .bolg-heading .user,
+.blog-news-area .single-blog-wrapper .blog-contnet .bolg-heading .time,
+.blog-news-area .single-blog-wrapper .blog-contnet .bolg-heading .calender,
+.blog-news-area .single-blog-wrapper .blog-contnet .bolg-footer .comments,
+.blog-news-area .single-blog-wrapper .blog-contnet .bolg-footer .like,
+.blog-news-area .single-blog-wrapper .blog-contnet .bolg-footer .heart{
+	display: flex;
+	align-items: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #515151;
+	margin-bottom: 4px;
+}
+.blog-news-area .single-blog-wrapper .blog-contnet .bolg-heading .user img,
+.blog-news-area .single-blog-wrapper .blog-contnet .bolg-heading .time img,
+.blog-news-area .single-blog-wrapper .blog-contnet .bolg-heading .calender img,
+.blog-news-area .single-blog-wrapper .blog-contnet .bolg-footer .comments img,
+.blog-news-area .single-blog-wrapper .blog-contnet .bolg-footer .like img,
+.blog-news-area .single-blog-wrapper .blog-contnet .bolg-footer .heart img {
+	margin-right: 5px;
+}
+.blog-news-area .single-blog-wrapper .blog-contnet .title {
+	font-size: 20px;
+	line-height: 1.5;
+}
+.blog-news-area .single-blog-wrapper .blog-contnet p{
+	font-weight: 300;
+	margin-bottom: 6px;
+}
+.blog-news-area .single-blog-wrapper .blog-contnet a {
+	display: block;
+	color: rgb(0, 0, 0);
+	text-decoration: underline;
+	margin-bottom: 12px;
+}
+/* =============================================
+Shikkha Subcribe Area Style
+============================================== */
+.subcribe-area {
+	padding: 150px 0;
+	position: relative;
+}
+.subcribe-area::after {
+	position: absolute;
+	content: " ";
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	background: #f4f4f4;
+	z-index: -1;
+}
+.subcribe-area::before {
+	position: absolute;
+	content: " ";
+	right: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	background: #ffea00;
+	z-index: -1;
+}
+.subcribe-left-content h5,
+.subcribe-right-content h5 {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.subcribe-left-content h4 {
+	font-size: 25px;
+	font-weight: 300;
+	margin: 14px 0 20px;
+}
+.subcribe-left-content p {
+	margin-bottom: 30px;
+}
+.subcribe-left-content p,
+.subcribe-right-content p {
+	font-weight: 400;
+	color: #111;
+}
+.subcribe-left-content form {
+	position: relative;
+}
+.subcribe-left-content input[type="email"] {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+    width: 86%;
+    background: #fff;
+    border: none;
+    padding: 11px 30px;
+	color: #9e9e9e;
+	font-weight: 300;
+	border-radius: 0 30px;
+}
+.subcribe-left-content input[type="submit"] {
+	font-family: 'Poppins', sans-serif;
+	position: absolute;
+	top: 0;
+	right: 70px;
+    background: #ffea00;
+    border: none;
+    color: #111111;
+	padding: 11px 40px;
+	font-weight: 600;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 30px 30px 0;
+}
+.subcribe-right-content .subcribe-content{
+	padding-left: 50px;
+	padding-right: 16px;
+}
+.subcribe-right-content p {
+	margin-top: 35px;
+}
+.personal-info {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	margin: 35px auto 0;
+}
+.personal-info img {
+	display: inline-block;
+	height: 65px;
+	width: 65px;
+	margin-right: 10px;
+}
+.personal-info .details .name {
+	display: inline-block;
+	font-size: 20px;
+	text-align: left;
+}
+.personal-info .details .name span {
+	font-size: 16px;
+	display: block;
+	font-weight: 400;
+	margin-top: 8px;
+}
+.subcribe-area .subcribe-right-content .owl-item img {
+    display: block;
+    width: auto;
+}
+.subcribe-area .subcribe-right-content .owl-dots {
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.subcribe-area .subcribe-right-content .owl-dots .owl-dot {
+    display: block;
+    height: 25px;
+    width: 5px;
+    background: #606060;
+    margin: 5px 0px;
+    opacity: 0.8;
+}
+.subcribe-area .subcribe-right-content .owl-dots .owl-dot:hover,
+.subcribe-area .subcribe-right-content .owl-dots .owl-dot.active {
+    background: #ff0000;
+    opacity: 1;
+}
+/* =============================================
+Shikkha Contact Area Style
+============================================== */
+
+form .form-control {
+	border: none;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #c0c0c0;
+	border-radius: 0;
+	padding-left: 0;
+	padding-bottom: 6px;
+	padding-top: 20px;
+}
+.contact-us-right-area .contact-info-box {
+	display: block;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	align-items: center;
+	color: #000;
+	padding: 22px;
+	min-height: 75px;
+    background: #fdfdfd;
+	margin-bottom: 35px;
+	padding-left: 54px;
+	border: 1px solid #111;
+	position: relative;
+}
+.contact-us-right-area .contact-info-box:last-child{
+	margin-bottom: 0;
+}
+form textarea.form-control {
+	resize: none;
+}
+.contact-us-right-area .contact-info-box .fa-map-marker-alt,
+.contact-us-right-area .contact-info-box .fa-envelope,
+.contact-us-right-area .contact-info-box .fa-phone-alt {
+	display: inline-block;
+	font-size: 26px;
+	color: #ffea00;
+    text-align: center;
+    position: absolute;
+    left: 16px;
+    top: 22px;
+}
+.form-control:focus {
+	border-color: initial;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+  }
+/* =============================================
+Shikkha Footer Area Style
+============================================== */
+.footer-area {
+	background: #ffea00;
+}
+.footer-widget p {
+	color: #bcbcbc;
+	font-weight: 300;
+	margin: 20px 0;
+}
+.footer-widget p:last-child {
+	margin-bottom: 0;
+}
+.footer-widget p.copyright {
+	color: #eaeaea;
+}
+.footer-widget p.copyright span {
+	margin-left: 20px;
+}
+.footer-widget ul li+li {
+  margin-top: 20px;
+}
+.footer-widget ul li a {
+	font-size: 16px;
+	font-weight: 300;
+	color: #9f9f9f;
+}
+.social-links-icon a {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  display: inline-block;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  margin-right: 10px;
+  margin-top: 26px;
+}
+
+.social-links-icon a:hover {
+	background: #fee13f;
+	color: #111;
+}
+
+
